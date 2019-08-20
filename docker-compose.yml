@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+    ntopng:
+        build:
+            context: docker/ntopng
+        ports:
+            - "3000:3000"
+        network_mode: "host"
